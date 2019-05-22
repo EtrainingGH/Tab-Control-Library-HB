@@ -1,11 +1,4 @@
-﻿/*
-Copyright (C): 2010-2019, Shenzhen Yahboom Tech
-modified from liusen
-load dependency
-"HelloBot": "file:../pxt-hellobot"
-*/
-
-//% color="#006400" weight=20 icon="\uf1b9"
+﻿//% color="#006400" weight=20 icon="\uf1b9"
 namespace eBot {
 
     const PCA9685_ADD = 0x41
@@ -63,7 +56,6 @@ namespace eBot {
         ringtone,
         funk,
         blues,
-
         birthday,
         wedding,
         funereal,
