@@ -6,7 +6,7 @@ load dependency
 */
 
 //% color="#006400" weight=20 icon="\uf1b9"
-namespace HelloBot {
+namespace eBot {
 
     const PCA9685_ADD = 0x41
     const MODE1 = 0x00
@@ -382,7 +382,7 @@ namespace HelloBot {
      * @param index
      */   
 
-    //% blockId=HelloBot_RGB_Car_Program block="RGB_Car_Program"
+    //% blockId=eBot_RGB_Car_Program block="RGB_Car_Program"
     //% weight=99
     //% blockGap=10
     //% color="#006400"
@@ -395,7 +395,7 @@ namespace HelloBot {
         return yahStrip;  
     }  
     
-    //% blockId=HelloBot_RGB_LArm_Program block="RGB_LArm_Program"
+    //% blockId=eBot_RGB_LArm_Program block="RGB_LArm_Program"
     //% weight=98
     //% blockGap=10
     //% color="#006400"
@@ -408,7 +408,7 @@ namespace HelloBot {
         return yahStripLArm;  
     } 
     
-    //% blockId=HelloBot_RGB_RArm_Program block="RGB_RArm_Program"
+    //% blockId=eBot_RGB_RArm_Program block="RGB_RArm_Program"
 		//% weight=97
 		//% blockGap=10
 		//% color="#006400"
@@ -421,7 +421,7 @@ namespace HelloBot {
         return yahStripRArm;  
     }
     
-    //% blockId=HelloBot_Touch_Sensor block="Touch_Sensor|%direct |direct |%value| value"
+    //% blockId=eBot_Touch_Sensor block="Touch_Sensor|%direct |direct |%value| value"
     //% weight=96
     //% blockGap=10
     //% color="#006400"
@@ -457,7 +457,7 @@ namespace HelloBot {
 
     }
     
-    //% blockId=HelloBot_Music_Car block="Music_Car|%index"
+    //% blockId=eBot_Music_Car block="Music_Car|%index"
     //% weight=95
     //% blockGap=10
     //% color="#006400"
@@ -487,7 +487,7 @@ namespace HelloBot {
         }
     }
     
-    //% blockId=HelloBot_Servo_Car block="Servo_Car|num %num|value %value"
+    //% blockId=eBot_Servo_Car block="Servo_Car|num %num|value %value"
     //% weight=94
     //% blockGap=10
     //% color="#006400"
@@ -502,7 +502,7 @@ namespace HelloBot {
 
     }
     
-    //% blockId=HelloBot_CarCtrl block="CarCtrl|%index"
+    //% blockId=eBot_CarCtrl block="CarCtrl|%index"
     //% weight=93
     //% blockGap=10
     //% color="#006400"
@@ -519,7 +519,7 @@ namespace HelloBot {
         }
     }
     
-    //% blockId=HelloBot_CarCtrlSpeed block="CarCtrlSpeed|%index|speed %speed"
+    //% blockId=eBot_CarCtrlSpeed block="CarCtrlSpeed|%index|speed %speed"
     //% weight=92
     //% blockGap=10
     //% speed.min=0 speed.max=255
@@ -537,7 +537,7 @@ namespace HelloBot {
         }
     }
     
-    //% blockId=HelloBot_CarCtrlSpeed2 block="CarCtrlSpeed2|%index|speed1 %speed1|speed2 %speed2"
+    //% blockId=eBot_CarCtrlSpeed2 block="CarCtrlSpeed2|%index|speed1 %speed1|speed2 %speed2"
     //% weight=91
     //% blockGap=10
     //% speed1.min=0 speed1.max=255 speed2.min=0 speed2.max=255
@@ -555,7 +555,7 @@ namespace HelloBot {
         }
     }    
         
-    //% blockId=HelloBot_RGB_Line_Program block="RGB_Line_Program"
+    //% blockId=eBot_RGB_Line_Program block="RGB_Line_Program"
     //% weight=90
     //% blockGap=10
     //% color="#006400"
@@ -568,7 +568,7 @@ namespace HelloBot {
         return yahStripLine;  
     }  
     
-    //% blockId=HelloBot_Line_Sensor block="Line_Sensor|direct %direct|value %value"
+    //% blockId=eBot_Line_Sensor block="Line_Sensor|direct %direct|value %value"
     //% weight=89
     //% blockGap=10
     //% color="#006400"
@@ -603,7 +603,7 @@ namespace HelloBot {
 
     }
         
-		//% blockId=HelloBot_ultrasonic_car block="ultrasonic return distance(cm)"
+		//% blockId=eBot_ultrasonic_car block="ultrasonic return distance(cm)"
     //% color="#006400"
     //% weight=88
     //% blockGap=10
@@ -628,7 +628,7 @@ namespace HelloBot {
         return  Math.floor(length);
     }
 
-    //% blockId=HelloBot_Avoid_Sensor block="Avoid_Sensor|direct %direct|value %value"
+    //% blockId=eBot_Avoid_Sensor block="Avoid_Sensor|direct %direct|value %value"
     //% weight=87
     //% blockGap=10
     //% color="#006400"
