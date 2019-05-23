@@ -28,21 +28,21 @@ namespace eBot {
 
     export enum enColor {
 
-        //% blockId="OFF" block="OFF"
+        //% blockId="OFF" block="Apagado"
         OFF = 0,
-        //% blockId="Red" block="Red"
+        //% blockId="Red" block="Rojo"
         Red,
-        //% blockId="Green" block="Green"
+        //% blockId="Green" block="Verde"
         Green,
-        //% blockId="Blue" block="Blue"
+        //% blockId="Blue" block="Azul"
         Blue,
-        //% blockId="White" block="White"
+        //% blockId="White" block="Blanco"
         White,
-        //% blockId="Cyan" block="Cyan"
+        //% blockId="Cyan" block="Cian"
         Cyan,
-        //% blockId="Pinkish" block="Pinkish"
+        //% blockId="Pinkish" block="Magenta"
         Pinkish,
-        //% blockId="Yellow" block="Yellow"
+        //% blockId="Yellow" block="Amarilla"
         Yellow,
 
     }
@@ -71,29 +71,29 @@ namespace eBot {
     }
     export enum enPos {
 
-        //% blockId="LeftState" block="LeftState"
+        //% blockId="LeftState" block="Estado Izquierda"
         LeftState = 0,
-        //% blockId="RightState" block="RightState"
+        //% blockId="RightState" block="Estado Derecha"
         RightState = 1
     }
 
     export enum enLineState {
-        //% blockId="White" block="White Line"
+        //% blockId="White" block="Blanco"
         White = 1,
-        //% blockId="Black" block="Black Line"
+        //% blockId="Black" block="Negro"
         Black = 0
     }
     
     export enum enTouchState {
-        //% blockId="Get" block="Get"
+        //% blockId="Get" block="Pulso"
         Get = 0,
-        //% blockId="NoGet" block="NoGet"
+        //% blockId="NoGet" block="Sin Pulso"
         NoGet = 1
     }    
     export enum enAvoidState {
-        //% blockId="OBSTACLE" block="Obstacle"
+        //% blockId="OBSTACLE" block="Con Obstaculo"
         OBSTACLE = 1,
-        //% blockId="NOOBSTACLE" block="No Obstacle"
+        //% blockId="NOOBSTACLE" block="Sin Obstaculo"
         NOOBSTACLE = 0
 
     }
@@ -106,19 +106,19 @@ namespace eBot {
         S4
     }
     export enum CarState {
-        //% blockId="Car_Run" block="Run"
+        //% blockId="Car_Run" block="Adelante"
         Car_Run = 1,
-        //% blockId="Car_Back" block="Back"
+        //% blockId="Car_Back" block="Atras"
         Car_Back = 2,
-        //% blockId="Car_Left" block="Left"
+        //% blockId="Car_Left" block="Izquierda"
         Car_Left = 3,
-        //% blockId="Car_Right" block="Right"
+        //% blockId="Car_Right" block="Derecha"
         Car_Right = 4,
-        //% blockId="Car_Stop" block="Stop"
+        //% blockId="Car_Stop" block="Parar"
         Car_Stop = 5,
-        //% blockId="Car_SpinLeft" block="SpinLeft"
+        //% blockId="Car_SpinLeft" block="Rotar a la izquierda"
         Car_SpinLeft = 6,
-        //% blockId="Car_SpinRight" block="SpinRight"
+        //% blockId="Car_SpinRight" block="Rotar a la derecha"
         Car_SpinRight = 7
     }
 
@@ -201,9 +201,9 @@ namespace eBot {
         setPwm(15, 0, speed2);
         setPwm(14, 0, 0);
         //pins.digitalWritePin(DigitalPin.P16, 1);
-       // pins.analogWritePin(AnalogPin.P1, 1023-speed); //速度控制
+       // pins.analogWritePin(AnalogPin.P1, 1023-speed); //SpeedControl
 
-       // pins.analogWritePin(AnalogPin.P0, speed);//速度控制
+       // pins.analogWritePin(AnalogPin.P0, speed);//SpeedControl
        // pins.digitalWritePin(DigitalPin.P8, 0);
     }
 
@@ -231,9 +231,9 @@ namespace eBot {
         setPwm(14, 0, speed2);
 
         //pins.digitalWritePin(DigitalPin.P16, 0);
-        //pins.analogWritePin(AnalogPin.P1, speed); //速度控制
+        //pins.analogWritePin(AnalogPin.P1, speed); //SpeedControl
 
-        //pins.analogWritePin(AnalogPin.P0, 1023 - speed);//速度控制
+        //pins.analogWritePin(AnalogPin.P0, 1023 - speed);//SpeedControl
         //pins.digitalWritePin(DigitalPin.P8, 1);
     }
 
@@ -374,7 +374,7 @@ namespace eBot {
      * @param index
      */   
 
-    //% blockId=eBot_RGB_Car_Program block="RGB_Car_Program"
+    //% blockId=eBot_RGB_Car_Program block="RGB_Tab_Control"
     //% weight=99
     //% blockGap=10
     //% color="#006400"
@@ -387,7 +387,7 @@ namespace eBot {
         return yahStrip;  
     }  
     
-    //% blockId=eBot_RGB_LArm_Program block="RGB_LArm_Program"
+    //% blockId=eBot_RGB_LArm_Program block="RGB_LArm_Tab_Control"
     //% weight=98
     //% blockGap=10
     //% color="#006400"
@@ -400,7 +400,7 @@ namespace eBot {
         return yahStripLArm;  
     } 
     
-    //% blockId=eBot_RGB_RArm_Program block="RGB_RArm_Program"
+    //% blockId=eBot_RGB_RArm_Program block="RGB_RArm_Tab_Control"
 		//% weight=97
 		//% blockGap=10
 		//% color="#006400"
@@ -413,7 +413,7 @@ namespace eBot {
         return yahStripRArm;  
     }
     
-    //% blockId=eBot_Touch_Sensor block="Touch_Sensor|%direct |direct |%value| value"
+    //% blockId=eBot_Touch_Sensor block="Sensor_Tactil|%direct |directo |%value| valor"
     //% weight=96
     //% blockGap=10
     //% color="#006400"
@@ -449,7 +449,7 @@ namespace eBot {
 
     }
     
-    //% blockId=eBot_Music_Car block="Music_Car|%index"
+    //% blockId=eBot_Music_Car block="Musica_Robot|%index"
     //% weight=95
     //% blockGap=10
     //% color="#006400"
@@ -479,7 +479,7 @@ namespace eBot {
         }
     }
     
-    //% blockId=eBot_Servo_Car block="Servo_Car|num %num|value %value"
+    //% blockId=eBot_Servo_Car block="Servo_Motor|número %num|valor %value"
     //% weight=94
     //% blockGap=10
     //% color="#006400"
@@ -494,7 +494,7 @@ namespace eBot {
 
     }
     
-    //% blockId=eBot_CarCtrl block="CarCtrl|%index"
+    //% blockId=eBot_CarCtrl block="Control_Robot|%index"
     //% weight=93
     //% blockGap=10
     //% color="#006400"
@@ -511,7 +511,7 @@ namespace eBot {
         }
     }
     
-    //% blockId=eBot_CarCtrlSpeed block="CarCtrlSpeed|%index|speed %speed"
+    //% blockId=eBot_CarCtrlSpeed block="Control_Robot_Velocidad|%index|velocidad %speed"
     //% weight=92
     //% blockGap=10
     //% speed.min=0 speed.max=255
@@ -529,7 +529,7 @@ namespace eBot {
         }
     }
     
-    //% blockId=eBot_CarCtrlSpeed2 block="CarCtrlSpeed2|%index|speed1 %speed1|speed2 %speed2"
+    //% blockId=eBot_CarCtrlSpeed2 block="Control_Robot_Velocidad_X2|%index|velocidad1 %speed1|velocidad2 %speed2"
     //% weight=91
     //% blockGap=10
     //% speed1.min=0 speed1.max=255 speed2.min=0 speed2.max=255
@@ -547,7 +547,7 @@ namespace eBot {
         }
     }    
         
-    //% blockId=eBot_RGB_Line_Program block="RGB_Line_Program"
+    //% blockId=eBot_RGB_Line_Program block="RGB_Programa_Linea"
     //% weight=90
     //% blockGap=10
     //% color="#006400"
@@ -560,7 +560,7 @@ namespace eBot {
         return yahStripLine;  
     }  
     
-    //% blockId=eBot_Line_Sensor block="Line_Sensor|direct %direct|value %value"
+    //% blockId=eBot_Line_Sensor block="Sensor_Linea|directo %direct|valor %value"
     //% weight=89
     //% blockGap=10
     //% color="#006400"
@@ -595,7 +595,7 @@ namespace eBot {
 
     }
         
-		//% blockId=eBot_ultrasonic_car block="ultrasonic return distance(cm)"
+		//% blockId=eBot_ultrasonic_car block="Ultrasonido retorna distancia(cm)"
     //% color="#006400"
     //% weight=88
     //% blockGap=10
@@ -620,7 +620,7 @@ namespace eBot {
         return  Math.floor(length);
     }
 
-    //% blockId=eBot_Avoid_Sensor block="Avoid_Sensor|direct %direct|value %value"
+    //% blockId=eBot_Avoid_Sensor block="Sensor_Evitar|directo %direct|valor %value"
     //% weight=87
     //% blockGap=10
     //% color="#006400"
